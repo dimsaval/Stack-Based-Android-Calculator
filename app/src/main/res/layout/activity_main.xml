@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    android:paddingHorizontal="10dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="50sp"
+        android:textColor="?attr/colorPrimary"
+        android:textColorHint="#5E5E5E"
+        android:gravity="end|bottom"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/keyboard"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/keyboard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/backSpace"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:hapticFeedbackEnabled="true"
+                android:text="Back"
+                android:textSize="14sp"
+                app:backgroundTint="?attr/colorSecondary"
+                android:textColor="?attr/colorOnSecondary"
+                app:cornerRadius="25dp"
+                app:rippleColor="#FFDFB7" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/AC"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:hapticFeedbackEnabled="true"
+                android:text="AC"
+                android:textSize="18sp"
+                app:backgroundTint="?attr/colorSecondary"
+                android:textColor="?attr/colorOnSecondary"
+                app:cornerRadius="25dp"
+                app:rippleColor="#FFDFB7" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/percent"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:hapticFeedbackEnabled="true"
+                android:text="%"
+                android:textSize="18sp"
+                app:backgroundTint="?attr/colorTertiary"
+                android:textColor="?attr/colorOnTertiary"
+                app:cornerRadius="25dp"
+                app:rippleColor="#EADEE6" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/divide"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:hapticFeedbackEnabled="true"
+                android:text="/"
+                android:textSize="18sp"
+                app:backgroundTint="?attr/colorPrimaryContainer"
+                android:textColor="?attr/colorOnPrimaryContainer"
+                app:cornerRadius="25dp"
+                app:rippleColor="#C2C2C2" />
+        </TableRow>
+
+        <TableRow>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/numseven"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:text="7"
+                app:backgroundTint="?attr/colorPrimary"
+                android:textColor="?attr/colorOnPrimary"
+                android:textSize="18sp"
+                app:cornerRadius="25dp"
+                android:hapticFeedbackEnabled="true" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/numeight"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:hapticFeedbackEnabled="true"
+                app:backgroundTint="?attr/colorPrimary"
+                android:textColor="?attr/colorOnPrimary"
+                android:text="8"
+                android:textSize="18sp"
+                app:cornerRadius="25dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/numnine"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:hapticFeedbackEnabled="true"
+                app:backgroundTint="?attr/colorPrimary"
+                android:textColor="?attr/colorOnPrimary"
+                android:text="9"
+                android:textSize="18sp"
+                app:cornerRadius="25dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/multi"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:hapticFeedbackEnabled="true"
+                android:text="*"
+                android:textSize="18sp"
+                app:backgroundTint="?attr/colorPrimaryContainer"
+                android:textColor="?attr/colorOnPrimaryContainer"
+                app:cornerRadius="25dp"
+                app:rippleColor="#C2C2C2" />
+        </TableRow>
+
+        <TableRow>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/numfour"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:hapticFeedbackEnabled="true"
+                app:backgroundTint="?attr/colorPrimary"
+                android:textColor="?attr/colorOnPrimary"
+                android:text="4"
+                android:textSize="18sp"
+                app:cornerRadius="25dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/numfive"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:hapticFeedbackEnabled="true"
+                app:backgroundTint="?attr/colorPrimary"
+                android:textColor="?attr/colorOnPrimary"
+                android:text="5"
+                android:textSize="18sp"
+                app:cornerRadius="25dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/numsix"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:hapticFeedbackEnabled="true"
+                app:backgroundTint="?attr/colorPrimary"
+                android:textColor="?attr/colorOnPrimary"
+                android:text="6"
+                android:textSize="18sp"
+                app:cornerRadius="25dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/minus"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:hapticFeedbackEnabled="true"
+                android:text="-"
+                android:textSize="18sp"
+                app:backgroundTint="?attr/colorPrimaryContainer"
+                android:textColor="?attr/colorOnPrimaryContainer"
+                app:cornerRadius="25dp"
+                app:rippleColor="#C2C2C2" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/numone"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:hapticFeedbackEnabled="true"
+                app:backgroundTint="?attr/colorPrimary"
+                android:textColor="?attr/colorOnPrimary"
+                android:text="1"
+                android:textSize="18sp"
+                app:cornerRadius="25dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/numtwo"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:hapticFeedbackEnabled="true"
+                app:backgroundTint="?attr/colorPrimary"
+                android:textColor="?attr/colorOnPrimary"
+                android:text="2"
+                android:textSize="18sp"
+                app:cornerRadius="25dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/numthree"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:hapticFeedbackEnabled="true"
+                app:backgroundTint="?attr/colorPrimary"
+                android:textColor="?attr/colorOnPrimary"
+                android:text="3"
+                android:textSize="18sp"
+                app:cornerRadius="25dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/plus"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:hapticFeedbackEnabled="true"
+                android:text="+"
+                android:textSize="18sp"
+                app:backgroundTint="?attr/colorPrimaryContainer"
+                android:textColor="?attr/colorOnPrimaryContainer"
+                app:cornerRadius="25dp"
+                app:rippleColor="#C2C2C2" />
+        </TableRow>
+
+        <TableRow>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/parenthesis"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:hapticFeedbackEnabled="true"
+                app:backgroundTint="?attr/colorPrimary"
+                android:textColor="?attr/colorOnPrimary"
+                android:text="( )"
+                android:textSize="18sp"
+                app:cornerRadius="25dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/numzero"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:hapticFeedbackEnabled="true"
+                app:backgroundTint="?attr/colorPrimary"
+                android:textColor="?attr/colorOnPrimary"
+                android:text="0"
+                android:textSize="18sp"
+                app:cornerRadius="25dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/coma"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:hapticFeedbackEnabled="true"
+                app:backgroundTint="?attr/colorPrimary"
+                android:textColor="?attr/colorOnPrimary"
+                android:text="."
+                android:textSize="18sp"
+                app:cornerRadius="25dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/equals"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:text="="
+                app:backgroundTint="?attr/colorSecondaryContainer"
+                android:textColor="?attr/colorOnSecondaryContainer"
+                android:textSize="18sp"
+                app:cornerRadius="25dp"
+                app:rippleColor="#7D7D7D"/>
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
