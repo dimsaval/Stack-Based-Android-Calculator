@@ -48,7 +48,7 @@ Simple User Interface that has a keyboard in a 4*5 grid containing:
 The expression is shown to the user using a text view above the keyboard on the right
 hand side of the screen. The user using the keyboard can type the expression they want to calculate
 
-<img src="./images/Screenshot_1_Calculator.png" width= 48 height= 55)
+<img src="./images/Screenshot_1_Calculator.png" height= 60%)>
 
 
 <br>
@@ -57,21 +57,21 @@ When the user presses the equals button the expression is calculated and the
 text view changes to the result.
 Then the user can use the result as a new expression.
 
-<img src="./images/Screenshot_2_Calculator.png" width= 48 height= 55)
+<img src="./images/Screenshot_2_Calculator.png" height= 60%)>
 
 <br>
 <br>
 In case of malformed expression or division by 0 the result shown to the user is "Error".
 
-<img src="./images/Screenshot_3_Calculator.png" width= 48 height= 55)
+<img src="./images/Screenshot_3_Calculator.png" height= 60%)>
 
 <br>
 The colours of the application's elements (buttons, text) change dynamically using the colour theme
 the user has on their phone. Also supports both light and dark mode.
 
-<img src="./images/Screenshot_4_Calculator.png" width= 48 height= 55)
+<img src="./images/Screenshot_4_Calculator.png" height= 60%)>
 
-<img src="./images/Screenshot_5_Calculator.png" width= 48 height= 55)
+<img src="./images/Screenshot_5_Calculator.png" height= 60%)>
 
 # **Calculation Process**
 The application uses helper functions to pipeline the calculation process. <br>
