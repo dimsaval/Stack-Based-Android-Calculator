@@ -48,7 +48,7 @@ Simple User Interface that has a keyboard in a 4*5 grid containing:
 The expression is shown to the user using a text view above the keyboard on the right
 hand side of the screen. The user using the keyboard can type the expression they want to calculate
 
-<img src="./images/Screenshot_1_Calculator.png" width= 40% height=auto margin=auto)>
+<img src="./images/Screenshot_1_Calculator.png" width= 40% height=auto margin=auto>
 
 
 <br>
@@ -57,26 +57,26 @@ When the user presses the equals button the expression is calculated and the
 text view changes to the result.
 Then the user can use the result as a new expression.
 
-<img src="./images/Screenshot_2_Calculator.png" width= 40% height=auto margin=auto)>
+<img src="./images/Screenshot_2_Calculator.png" width= 40% height=auto margin=auto>
 
 <br>
 <br>
 In case of malformed expression or division by 0 the result shown to the user is "Error".
 
-<img src="./images/Screenshot_3_Calculator.png" width= 40% height=auto margin=auto)>
+<img src="./images/Screenshot_3_Calculator.png" width= 40% height=auto margin=auto>
 
 <br>
 The colours of the application's elements (buttons, text) change dynamically using the colour theme
 the user has on their phone. Also supports both light and dark mode.
 
 <p float="left">
-<img src="./images/Screenshot_4_Calculator.png" width= 40% height=auto margin=auto)>
+<img src="./images/Screenshot_4_Calculator.png" width= 40% height=auto margin=auto>
 
-<img src="./images/Screenshot_5_Calculator.png" width= 40% height=auto margin=auto)>
+<img src="./images/Screenshot_5_Calculator.png" width= 40% height=auto margin=auto>
 </p>
 
 # **Calculation Process**
-The application uses helper functions to pipeline the calculation process. <br>
+The application uses functions to pipeline the calculation process. <br>
 
 ## Core Functions
 ### **-tokenize(String)**
@@ -101,7 +101,7 @@ as a Double.
 ### **-isOfLowerOrEqualOrder(String current, String onStack)**
 This function is used in infixToPostfix function in order to determine whether the
 current operator is of lower or equal order than the operator inside the stack.
-Return True or False.
+Returns True or False.
 
 ### **-isOperator(String) / isOperator(char)**
 Function that returns True or False depending on whether the character is an operator
@@ -113,6 +113,10 @@ Function that returns True or False depending on whether the character is a numb
 ### **-printResult(Double)**
 Converts the result to a correct form converted to BigDecimal
 (If number is natural it will be displayed without the decimal point)
+
+### **-hasDot(String)**
+Checks if the latest number on the expression has a decimal point, so two decimal points 
+cannot be typed in the same number.
 
 ##### All functions have been tested using standard JUNIT test files
 
