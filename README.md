@@ -69,9 +69,11 @@ In case of malformed expression or division by 0 the result shown to the user is
 The colours of the application's elements (buttons, text) change dynamically using the colour theme
 the user has on their phone. Also supports both light and dark mode.
 
+<p float="left">
 <img src="./images/Screenshot_4_Calculator.png" width= 40% height=auto margin=auto)>
 
 <img src="./images/Screenshot_5_Calculator.png" width= 40% height=auto margin=auto)>
+</p>
 
 # **Calculation Process**
 The application uses helper functions to pipeline the calculation process. <br>
