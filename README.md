@@ -47,22 +47,40 @@ Simple User Interface that has a keyboard in a 4*5 grid containing:
 
 The expression is shown to the user using a text view above the keyboard on the right
 hand side of the screen. The user using the keyboard can type the expression they want to calculate
+
+<div style="height:40%; width:40% margin: auto;">
 ![Screenshot of app with an expression written](./images/Screenshot_1_Calculator.png)
+</div>
+
 <br>
 <br>
 When the user presses the equals button the expression is calculated and the 
 text view changes to the result.
 Then the user can use the result as a new expression.
+
+<div style="height:40%; width:40% margin: auto;">
 ![Screenshot of the app with the result of the previous expression](./images/Screenshot_2_Calculator.png)
+</div>
+
 <br>
 <br>
 In case of malformed expression or division by 0 the result shown to the user is "Error".
+
+<div style="height:40%; width:40% margin: auto;">
 ![Screenshot of the app with an Error](./images/Screenshot_3_Calculator.png)
+</div>
+
 <br>
 The colours of the application's elements (buttons, text) change dynamically using the colour theme
 the user has on their phone. Also supports both light and dark mode.
+
+<div style="height:40%; width:40% margin: auto;">
 ![Screenshot of the app using a Green colour pallete on the device](./images/Screenshot_4_Calculator.png)
+</div>
+
+<div style="height:40%; width:40% margin: auto;">
 ![Screenshot of the app using light mode](./images/Screenshot_5_Calculator.png)
+</div>
 
 # **Calculation Process**
 The application uses helper functions to pipeline the calculation process. <br>
